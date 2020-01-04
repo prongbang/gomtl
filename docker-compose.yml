@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  gomtl-db:
+    build: .
+    container_name: gomtl-db
+    ports:
+      - 27017:27017
+    volumes:
+      - ./volumns/db:/data/db
+    restart: always
